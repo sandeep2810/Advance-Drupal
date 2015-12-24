@@ -1,0 +1,6 @@
+name = Custom Block Creation
+description = "Create custom Block, Pages and URL."
+package = My Custom Modules
+core = 7.x
+files[] = c_block.module
+php = 5.4

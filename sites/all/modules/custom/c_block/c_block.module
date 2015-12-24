@@ -1,0 +1,42 @@
+<?php 
+/**	
+*
+* Custom block module
+* create alot of custom programming
+* with great new stuffs
+*
+*
+*
+*
+*
+ **/
+
+/**
+* Implementation of hook_menu()
+**/
+
+function c_block_menu(){
+
+		$items['admin/config/c_block']= array(
+									'title' => 'Node CBLOCK',
+									'description' => 'This menu is created for the testing purpose.',
+									'position' =>'center',
+									'weight'=>'-1',
+									'page callback'=>'admin_menu_cblock_page',
+									'access arguments'=>array('administer site configuration'),
+									'file'=>'system.admin.inc',
+									'file path'=>drupal_get_path('module','system'),
+		);
+
+		$items['admin/config/c_block/settings'] = array(
+									'title'=>'CBLOCK settings',
+									'description'=>'Change how CBLOCK behave.',
+									'page callback'=>'drupal_get_form',
+									'page arguments'=>array('c_block_admin_settings'),
+									'access arguments'=>array('administer site configuration'),
+									'type'=>'MENU_NORMAL_ITEM',
+									'file' =>'c_block.admin.inc',
+				);
+
+return $items;
+}
