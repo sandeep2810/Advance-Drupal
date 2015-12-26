@@ -10,6 +10,7 @@ WHAT TO PLACE IN THIS DIRECTORY?
 
 Placing downloaded and custom themes in this directory separates downloaded and
 custom themes from Drupal core's themes. This allows Drupal core to be updated
+
 without overwriting these files.
 
 DOWNLOAD ADDITIONAL THEMES
